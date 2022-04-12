@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>Desafío 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h2>Nuevo producto</h2></header>
+      <div class="form">
+        <form action="/api/productos" method="post">
+          <div class="mb-3">
+            <input
+              type="title"
+              name="title"
+              id="title"
+              placeholder="Nombre del producto"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="price"
+              id="price"
+              placeholder="Precio"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="thumbnail"
+              id="thumbnail"
+              placeholder="url de imagen"
+              class="form-control form-control-sm"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <button
+              type="submit"
+              class="btn btn-sm btn-success float-end"
+              title="Guardar"
+              id="btnGuardar"
+            >
+              Guardar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
